@@ -155,8 +155,22 @@
 }
 
 .settings-bar {
-	background-color: lightgray;
 	grid-area: settings-bar;
+	padding: 30px 10px;
+}
+
+.inbox-type {
+	border-top: 1px solid #f1f3f4;
+	padding: 15px 5px;
+	margin-top: 30px;
+	height: 600px;
+	overflow-y: scroll;
+}
+.type {
+	display: grid;
+	grid-template-columns: 30px 1fr 1fr;
+	padding: 20px 0px;
+	align-items: center;
 }
 .other-apps {
 	grid-area: other-apps;
