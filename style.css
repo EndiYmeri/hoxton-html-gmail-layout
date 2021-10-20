@@ -126,6 +126,7 @@
 }
 .emails {
 	overflow-y: scroll;
+	overflow-x: hidden;
 	height: 87vh;
 }
 .mail-categories {
@@ -194,4 +195,65 @@
 }
 .plus-button div:last-child {
 	transform: rotate(90deg);
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		grid-template:
+			"logo-menu-button header header" 64px
+			"left-nav main other-apps" 1fr /
+			256px 1fr 55px;
+	}
+	.settings-bar {
+		display: none;
+	}
+}
+@media screen and (max-width: 800px) {
+	.container {
+		grid-template:
+			"logo-menu-button header " 64px
+			"left-nav main " 1fr /
+			256px 1fr;
+	}
+	.other-apps {
+		display: none;
+	}
+}
+@media screen and (max-width: 600px) {
+	.container {
+		grid-template:
+			"logo-menu-button header " 64px
+			"left-nav main " 1fr /
+			100px 1fr;
+	}
+	.logo-menu-button img {
+		display: none;
+	}
+	.account-buttons {
+		display: none;
+	}
+	.left-nav button p {
+		display: none;
+	}
+	.option {
+		padding: 5px;
+	}
+	.hangout-option {
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		grid-template:
+			"logo-menu-button header " 64px
+			"main main " 1fr /
+			70px 1fr;
+	}
+	.emails {
+		width: 100vw;
+	}
+	.left-nav {
+		display: none;
+	}
 }
