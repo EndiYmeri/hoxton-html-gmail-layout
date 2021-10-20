@@ -159,6 +159,25 @@
 	grid-area: settings-bar;
 }
 .other-apps {
-	background-color: lightgreen;
 	grid-area: other-apps;
+	display: grid;
+	height: 50%;
+	justify-items: center;
+	padding: 4px;
+}
+.other-apps img {
+	width: 25px;
+	margin: 20px auto;
+}
+.plus-button {
+	border-top: 2px solid #f1f3f4;
+	padding-top: 20px;
+}
+.plus-button div {
+	width: 25px;
+	height: 1px;
+	background-color: #292929;
+}
+.plus-button div:last-child {
+	transform: rotate(90deg);
 }
