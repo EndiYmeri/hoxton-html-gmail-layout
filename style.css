@@ -12,13 +12,36 @@
 		"left-nav main settings-bar other-apps" 1fr /
 		256px 1fr 300px 55px;
 }
+/* Logo and menu button */
 .logo-menu-button {
-	grid-area: logo-menu-button;
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
 }
+.burger-menu {
+	cursor: pointer;
+}
+.burger-menu div {
+	width: 25px;
+	height: 2px;
+	background-color: lightgray;
+	margin: 4px auto;
+}
+
+/* Header */
+
 .header {
 	grid-area: header;
-	background-color: lightblue;
+	padding: 10px 15px 10px 0;
+	display: grid;
+	grid-template-columns: 1fr auto;
 }
+.searchbar {
+	background-color: lightgray;
+	display: grid;
+	grid-template-columns: 30px 1fr 30px;
+}
+
 .left-nav {
 	grid-area: left-nav;
 	background-color: lightcoral;
